@@ -1,21 +1,19 @@
-using Microsoft.AspNetCore.Mvc;
 using HamburguesasTienda.Models;
-using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HamburguesasTienda.Controllers
 {
     public class ProductoController : Controller
     {
-        public static List<Producto> productos = new List<Producto>
+        private static List<Producto> productos = new()
         {
-            new Producto { Id = 1, Nombre = "Hamburguesa Clásica", Precio = 8.99M, ImagenUrl = "/img/classic.jpg" },
-            new Producto { Id = 2, Nombre = "Doble Queso", Precio = 10.49M, ImagenUrl = "/img/double.jpg" },
-            new Producto { Id = 3, Nombre = "Vegana", Precio = 9.99M, ImagenUrl = "/img/vegan.jpg" }
+            new Producto { Id = 1, Nombre = "Hamburguesa Clásica", Precio = 5.99m, ImagenUrl = "/img/classic.jpg", Disponible = true },
+            new Producto { Id = 2, Nombre = "Hamburguesa BBQ", Precio = 6.99m, ImagenUrl = "/img/bbq.jpg", Disponible = true }
         };
 
-        public IActionResult Index()
-        {
-            return View(productos);
-        }
+        public IActionResult Index() => View(productos);
+
+        public static Producto? ObtenerPorId(int id) =>
+            productos.FirstOrDefault(p => p.Id == id);
     }
 }

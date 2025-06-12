@@ -1,3 +1,4 @@
+namespace HamburguesasTienda.Models;
 public class SesionUsuario
 {
     public string UsuarioId { get; set; }

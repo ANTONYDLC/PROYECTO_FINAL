@@ -1,53 +1,63 @@
-using Microsoft.AspNetCore.Mvc;
 using HamburguesasTienda.Models;
-using System.Collections.Generic;
-using System.Linq;
-using HamburguesasTienda.Helpers;
-
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace HamburguesasTienda.Controllers
 {
     public class CarritoController : Controller
     {
-        private const string CarritoKey = "carrito";
+        private const string SESSION_KEY = "carrito";
 
         public IActionResult Index()
         {
-            var carrito = HttpContext.Session.GetObjectFromJson<List<Producto>>(CarritoKey) ?? new List<Producto>();
+            var carrito = ObtenerCarrito();
             return View(carrito);
         }
 
         public IActionResult Agregar(int id)
         {
-            var producto = ProductoController.productos.FirstOrDefault(p => p.Id == id);
-            if (producto != null)
-            {
-                var carrito = HttpContext.Session.GetObjectFromJson<List<Producto>>(CarritoKey) ?? new List<Producto>();
-                carrito.Add(producto);
-                HttpContext.Session.SetObjectAsJson(CarritoKey, carrito);
-            }
-            return RedirectToAction("Index", "Producto");
+            var producto = ProductoController.ObtenerPorId(id);
+            if (producto == null) return NotFound();
+
+            var carrito = ObtenerCarrito();
+            var item = carrito.FirstOrDefault(x => x.ProductoId == id);
+            if (item != null)
+                item.Cantidad++;
+            else
+                carrito.Add(new CarritoItem
+                {
+                    ProductoId = producto.Id,
+                    Nombre = producto.Nombre,
+                    Precio = producto.Precio,
+                    Cantidad = 1
+                });
+
+            GuardarCarrito(carrito);
+            return RedirectToAction("Index");
         }
 
-        public IActionResult Eliminar(int id)
+        public IActionResult Quitar(int id)
         {
-            var carrito = HttpContext.Session.GetObjectFromJson<List<Producto>>(CarritoKey);
-            if (carrito != null)
+            var carrito = ObtenerCarrito();
+            var item = carrito.FirstOrDefault(x => x.ProductoId == id);
+            if (item != null)
             {
-                var producto = carrito.FirstOrDefault(p => p.Id == id);
-                if (producto != null)
-                    carrito.Remove(producto);
-
-                HttpContext.Session.SetObjectAsJson(CarritoKey, carrito);
+                carrito.Remove(item);
+                GuardarCarrito(carrito);
             }
             return RedirectToAction("Index");
         }
 
-        public IActionResult Pagar()
+        private List<CarritoItem> ObtenerCarrito()
         {
-            HttpContext.Session.Remove(CarritoKey);
-            ViewBag.Mensaje = "Gracias por tu compra 🧾🍔";
-            return View();
+            var json = HttpContext.Session.GetString(SESSION_KEY);
+            return json == null ? new List<CarritoItem>() : JsonSerializer.Deserialize<List<CarritoItem>>(json)!;
+        }
+
+        private void GuardarCarrito(List<CarritoItem> carrito)
+        {
+            var json = JsonSerializer.Serialize(carrito);
+            HttpContext.Session.SetString(SESSION_KEY, json);
         }
     }
 }

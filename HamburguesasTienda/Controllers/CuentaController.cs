@@ -1,41 +1,54 @@
-using Microsoft.AspNetCore.Mvc;
 using HamburguesasTienda.Models;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HamburguesasTienda.Controllers
 {
     public class CuentaController : Controller
     {
-        public static List<Usuario> usuarios = new List<Usuario>();
-
-        public IActionResult Login() => View();
-
-        [HttpPost]
-        public IActionResult Login(Usuario user)
-        {
-            var encontrado = usuarios.FirstOrDefault(u => u.Email == user.Email && u.Password == user.Password);
-            if (encontrado != null)
-            {
-                HttpContext.Session.SetString("usuario", encontrado.Nombre);
-                HttpContext.Session.SetString("rol", encontrado.EsAdmin ? "admin" : "cliente");
-
-                return encontrado.EsAdmin
-                    ? RedirectToAction("Panel", "Admin")
-                    : RedirectToAction("Index", "Producto");
-            }
-
-            ViewBag.Error = "Credenciales inválidas.";
-            return View();
-        }
+        private static List<Usuario> usuarios = new();
 
         public IActionResult Registro() => View();
 
         [HttpPost]
-        public IActionResult Registro(Usuario nuevo)
+        public IActionResult Registro(RegistroViewModel model)
         {
-            usuarios.Add(nuevo);
-            return RedirectToAction("Login");
+            if (ModelState.IsValid)
+            {
+                if (usuarios.Any(u => u.Email == model.Email))
+                {
+                    ModelState.AddModelError("", "Este correo ya está registrado.");
+                    return View(model);
+                }
+
+                usuarios.Add(new Usuario
+                {
+                    Nombre = model.Nombre,
+                    Email = model.Email,
+                    Contraseña = model.Contraseña,
+                    EsAdmin = false
+                });
+
+                return RedirectToAction("Login");
+            }
+
+            return View(model);
+        }
+
+        public IActionResult Login() => View();
+
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
+        {
+            var usuario = usuarios.FirstOrDefault(u => u.Email == model.Email && u.Contraseña == model.Contraseña);
+            if (usuario != null)
+            {
+                HttpContext.Session.SetString("usuario", usuario.Email);
+                HttpContext.Session.SetString("esAdmin", usuario.EsAdmin.ToString());
+                return RedirectToAction("Index", "Home");
+            }
+
+            ModelState.AddModelError("", "Credenciales inválidas");
+            return View(model);
         }
 
         public IActionResult Logout()
