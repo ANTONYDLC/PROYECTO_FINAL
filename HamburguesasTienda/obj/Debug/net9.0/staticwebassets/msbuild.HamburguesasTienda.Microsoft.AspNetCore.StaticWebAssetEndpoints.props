@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HamburguesasTienda.533s4xoioy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"533s4xoioy"},{"Name":"integrity","Value":"sha256-oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8="},{"Name":"label","Value":"_content/HamburguesasTienda/HamburguesasTienda.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 06:01:44 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 06:37:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/HamburguesasTienda.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HamburguesasTienda.533s4xoioy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 06:01:44 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 06:37:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

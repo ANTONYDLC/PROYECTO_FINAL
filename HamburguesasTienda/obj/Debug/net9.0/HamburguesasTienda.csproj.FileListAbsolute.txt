@@ -1,12 +1,5 @@
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.Development.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.runtime.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.endpoints.json
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.exe
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.deps.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.runtimeconfig.json
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.dll
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.pdb
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.AssemblyInfoInputs.cache
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.AssemblyInfo.cs
@@ -15,6 +8,13 @@ C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.RazorAssemblyInfo.cache
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.RazorAssemblyInfo.cs
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.sourcelink.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.runtime.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.endpoints.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.deps.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.runtimeconfig.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.pdb
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\scopedcss\bundle\HamburguesasTienda.styles.css
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\scopedcss\projectbundle\HamburguesasTienda.bundle.scp.css

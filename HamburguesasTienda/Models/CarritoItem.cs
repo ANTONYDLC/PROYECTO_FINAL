@@ -1,3 +1,5 @@
+namespace HamburguesasTienda.Models
+{   
 public class CarritoItem
 {
     public int ProductoId { get; set; }
@@ -8,4 +10,5 @@ public class CarritoItem
     // Opcionales
     public string ImagenUrl { get; set; } = "/img/hamburguesa-generica.jpg";
     public string Descripcion { get; set; } = "";
+}
 }
