@@ -1,12 +1,21 @@
+using HamburguesasTienda.Models;
+using Microsoft.EntityFrameworkCore;
+using HamburguesasTienda.Data;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Agregar servicios
+// ✅ Configuración de la conexión a PostgreSQL (lee desde appsettings.json)
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 
 var app = builder.Build();
 
-// Configurar el pipeline HTTP
+// 🔐 Configuración del pipeline HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -14,13 +23,12 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // 👈 Necesario para wwwroot (CSS, JS, imágenes)
+app.UseStaticFiles(); // CSS, JS, imágenes
 app.UseRouting();
-
-app.UseSession(); // 👈 Después de UseRouting
+app.UseSession();
 app.UseAuthorization();
 
-// Configuración de rutas
+// ✅ Configuración de rutas
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
