@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 mb-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">📬 Contáctanos</h2>
+    <p class="text-center mb-5">¿Tienes preguntas o sugerencias? ¡Escríbenos y con gusto te responderemos!</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="post" action="/Home/EnviarMensaje">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required />
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required />
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning px-4">
+                        <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr class="mt-5" />
+
+    <div class="row text-center mt-4">
+        <div class="col-md-4" data-aos="fade-right">
+            <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
+            <p class="mt-2">Av. Hamburguesa #123<br />Ciudad Sabor, País</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+            <i class="bi bi-envelope-fill fs-2 text-danger"></i>
+            <p class="mt-2">soporte@hamburguesasapp.com</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+            <i class="bi bi-telephone-fill fs-2 text-success"></i>
+            <p class="mt-2">+123 456 7890</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script>
+        AOS.init();
+    </script>
+}

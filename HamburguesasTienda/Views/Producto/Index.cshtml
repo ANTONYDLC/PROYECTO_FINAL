@@ -1,0 +1,37 @@
+@model List<HamburguesasApp.Models.Producto>
+@{
+    ViewData["Title"] = "Menú de Hamburguesas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">🍔 Nuestro Menú</h2>
+    <p class="text-center mb-4">Explora nuestras deliciosas hamburguesas y agrégalas al carrito para disfrutarlas.</p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 shadow-sm">
+                    <img src="@item.ImagenUrl" class="card-img-top" alt="@item.Nombre" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@item.Nombre</h5>
+                        <p class="card-text">@item.Descripcion</p>
+                        <p class="fw-bold text-success mb-3">$@item.Precio.ToString("0.00")</p>
+                        <form asp-controller="Carrito" asp-action="Agregar" method="post" class="mt-auto">
+                            <input type="hidden" name="idProducto" value="@item.Id" />
+                            <button type="submit" class="btn btn-warning w-100">
+                                <i class="bi bi-cart-plus me-1"></i> Agregar al carrito
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+}
