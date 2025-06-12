@@ -3,15 +3,40 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- Hero principal -->
-<div class="p-5 mb-4 bg-light rounded-3 shadow-sm" data-aos="fade-up">
-    <div class="container-fluid py-5 text-center">
-        <h1 class="display-5 fw-bold">¡Bienvenido a HamburguesasApp! 🍔</h1>
-        <p class="fs-4">Las hamburguesas más jugosas y sabrosas de la ciudad.</p>
-        <a href="/Producto/Index" class="btn btn-warning btn-lg mt-3">
-            <i class="bi bi-basket-fill me-1"></i> Ver nuestro menú
-        </a>
+<!-- Hero principal con carrusel -->
+<div id="bannerCarousel" class="carousel slide mb-5 shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel" data-aos="fade-up">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/baner.webp" class="d-block w-100" alt="Hamburguesa 1" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                <h1 class="display-5 fw-bold">¡Bienvenido a La Perucha! 🍔</h1>
+                <p class="fs-4">Las hamburguesas más jugosas y sabrosas de la ciudad.</p>
+                <a href="/Producto/Index" class="btn btn-warning btn-lg mt-3">
+                    <i class="bi bi-basket-fill me-1"></i> Ver nuestro menú
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/baner1.png" class="d-block w-100" alt="Hamburguesa 2" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                <h2 class="fw-bold">Ingredientes frescos, sabor real</h2>
+                <p>Del campo a tu mesa. ¡Disfruta calidad premium!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/baner2.png" class="d-block w-100" alt="Hamburguesa 3" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                <h2 class="fw-bold">Haz tu pedido online</h2>
+                <p>Rápido, fácil y sabroso. ¡Te lo llevamos a casa!</p>
+            </div>
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
 </div>
 
 <!-- Tarjetas destacadas -->
@@ -20,7 +45,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
     <div class="col" data-aos="zoom-in">
         <div class="card h-100 shadow">
-            <img src="/img/burger1.jpg" class="card-img-top" alt="Burger 1">
+            <img src="/images/ham-5.webp" class="card-img-top" alt="Burger 1">
             <div class="card-body">
                 <h5 class="card-title">Cheese Burger</h5>
                 <p class="card-text">Doble carne con queso derretido y pan artesanal.</p>
@@ -29,7 +54,7 @@
     </div>
     <div class="col" data-aos="zoom-in" data-aos-delay="150">
         <div class="card h-100 shadow">
-            <img src="/img/burger2.jpg" class="card-img-top" alt="Burger 2">
+            <img src="/images/ham_3.webp" class="card-img-top" alt="Burger 2">
             <div class="card-body">
                 <h5 class="card-title">BBQ Bacon</h5>
                 <p class="card-text">Con crujiente tocino y salsa barbacoa especial.</p>
@@ -38,7 +63,7 @@
     </div>
     <div class="col" data-aos="zoom-in" data-aos-delay="300">
         <div class="card h-100 shadow">
-            <img src="/img/burger3.jpg" class="card-img-top" alt="Burger 3">
+            <img src="/images/ham_2.webp" class="card-img-top" alt="Burger 3">
             <div class="card-body">
                 <h5 class="card-title">Veggie Burger</h5>
                 <p class="card-text">Una alternativa saludable, 100% vegetal.</p>

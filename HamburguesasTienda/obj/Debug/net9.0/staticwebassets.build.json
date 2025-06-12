@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2hl8nbQKakmhWT/Y14+HbTVWw1Fl/jEDsdaBhQr5ZhM=",
+  "Hash": "S8ggkm3owiI9Maje1ATaz8Mft3xmsG3cleULDnin6p4=",
   "Source": "HamburguesasTienda",
   "BasePath": "_content/HamburguesasTienda",
   "Mode": "Default",
@@ -1443,6 +1443,216 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/baner#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "11h3a5dbgn",
+      "Integrity": "9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD+310=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\baner.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner1.png",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/baner1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lungzull81",
+      "Integrity": "vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\baner1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner2.png",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/baner2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lmchod6ssf",
+      "Integrity": "09kwwmVbxA6T+QpKJSQj2ahsNywAidJXhSSayyolm20=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\baner2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_1.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham_1#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vxucymgckj",
+      "Integrity": "o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham_1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_2.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham_2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e46duhh5qx",
+      "Integrity": "PnJ0LaPZqk8mof1EG+vsvsIOEo3KSZQDRv1BbmKe/YQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham_2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_3.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham_3#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x72cjonub",
+      "Integrity": "ZnO1RmrwScbRDYXfgtb00+LMN6nysryjBxc/baVgp+w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham_3.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_4.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham_4#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2ewxxhrbt0",
+      "Integrity": "xshkalwoLLyiwvYj8+M7lcjYO+jLIIxNAjPClXIYI18=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham_4.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_6.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham_6#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m40sbpj0df",
+      "Integrity": "pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham_6.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham-5.webp",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/ham-5#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f8y9tcvfrm",
+      "Integrity": "j7JZ2TD0G1p9PY9+QddOad8epYMgz0b9RIIMKZHAfuY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ham-5.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\log.png",
+      "SourceId": "HamburguesasTienda",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\",
+      "BasePath": "_content/HamburguesasTienda",
+      "RelativePath": "images/log#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yav2xspzxd",
+      "Integrity": "BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\log.png"
     },
     {
       "Identity": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\js\\site.js",
@@ -3916,6 +4126,826 @@
         {
           "Name": "integrity",
           "Value": "sha256-U8J7HwjCrqpBhMXSx2sYbeh6vWtMbeJ6pW8WXlAz+9I="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner.11h3a5dbgn.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "585182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD+310=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:31:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11h3a5dbgn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/baner.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD+310="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "585182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD+310=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:31:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD+310="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner1.lungzull81.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2848334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:33:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lungzull81"
+        },
+        {
+          "Name": "label",
+          "Value": "images/baner1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner1.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2848334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:33:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner2.lmchod6ssf.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2617666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09kwwmVbxA6T+QpKJSQj2ahsNywAidJXhSSayyolm20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:34:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lmchod6ssf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/baner2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-09kwwmVbxA6T+QpKJSQj2ahsNywAidJXhSSayyolm20="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner2.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2617666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09kwwmVbxA6T+QpKJSQj2ahsNywAidJXhSSayyolm20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 20:34:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-09kwwmVbxA6T+QpKJSQj2ahsNywAidJXhSSayyolm20="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_1.vxucymgckj.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vxucymgckj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham_1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_1.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_2.e46duhh5qx.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PnJ0LaPZqk8mof1EG+vsvsIOEo3KSZQDRv1BbmKe/YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e46duhh5qx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham_2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PnJ0LaPZqk8mof1EG+vsvsIOEo3KSZQDRv1BbmKe/YQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_2.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PnJ0LaPZqk8mof1EG+vsvsIOEo3KSZQDRv1BbmKe/YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PnJ0LaPZqk8mof1EG+vsvsIOEo3KSZQDRv1BbmKe/YQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_3.6x72cjonub.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZnO1RmrwScbRDYXfgtb00+LMN6nysryjBxc/baVgp+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x72cjonub"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham_3.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZnO1RmrwScbRDYXfgtb00+LMN6nysryjBxc/baVgp+w="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_3.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZnO1RmrwScbRDYXfgtb00+LMN6nysryjBxc/baVgp+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZnO1RmrwScbRDYXfgtb00+LMN6nysryjBxc/baVgp+w="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_4.2ewxxhrbt0.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xshkalwoLLyiwvYj8+M7lcjYO+jLIIxNAjPClXIYI18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2ewxxhrbt0"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham_4.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xshkalwoLLyiwvYj8+M7lcjYO+jLIIxNAjPClXIYI18="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_4.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xshkalwoLLyiwvYj8+M7lcjYO+jLIIxNAjPClXIYI18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xshkalwoLLyiwvYj8+M7lcjYO+jLIIxNAjPClXIYI18="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_6.m40sbpj0df.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_6.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "307366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m40sbpj0df"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham_6.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham_6.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_6.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "307366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham-5.f8y9tcvfrm.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham-5.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "300126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7JZ2TD0G1p9PY9+QddOad8epYMgz0b9RIIMKZHAfuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f8y9tcvfrm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ham-5.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7JZ2TD0G1p9PY9+QddOad8epYMgz0b9RIIMKZHAfuY="
+        }
+      ]
+    },
+    {
+      "Route": "images/ham-5.webp",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham-5.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "300126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7JZ2TD0G1p9PY9+QddOad8epYMgz0b9RIIMKZHAfuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:29:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7JZ2TD0G1p9PY9+QddOad8epYMgz0b9RIIMKZHAfuY="
+        }
+      ]
+    },
+    {
+      "Route": "images/log.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\log.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 08:26:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA="
+        }
+      ]
+    },
+    {
+      "Route": "images/log.yav2xspzxd.png",
+      "AssetFile": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\log.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 08:26:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yav2xspzxd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/log.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA="
         }
       ]
     },

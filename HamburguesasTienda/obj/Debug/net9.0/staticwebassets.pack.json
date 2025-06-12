@@ -13,6 +13,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner.webp",
+      "PackagePath": "staticwebassets\\images\\baner.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner1.png",
+      "PackagePath": "staticwebassets\\images\\baner1.png"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\baner2.png",
+      "PackagePath": "staticwebassets\\images\\baner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham-5.webp",
+      "PackagePath": "staticwebassets\\images\\ham-5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_1.webp",
+      "PackagePath": "staticwebassets\\images\\ham_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_2.webp",
+      "PackagePath": "staticwebassets\\images\\ham_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_3.webp",
+      "PackagePath": "staticwebassets\\images\\ham_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_4.webp",
+      "PackagePath": "staticwebassets\\images\\ham_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\ham_6.webp",
+      "PackagePath": "staticwebassets\\images\\ham_6.webp"
+    },
+    {
+      "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\images\\log.png",
+      "PackagePath": "staticwebassets\\images\\log.png"
+    },
+    {
       "Id": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

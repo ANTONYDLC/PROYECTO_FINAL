@@ -1,40 +1,57 @@
 @model HamburguesasTienda.Models.RegistroViewModel
-
 @{
-    ViewData["Title"] = "Registro de Usuario";
+    ViewData["Title"] = "Registro";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;" data-aos="fade-up">
-    <div class="card p-4 shadow-lg bg-light w-100" style="max-width: 500px;">
-        <h4 class="text-center mb-4"><i class="bi bi-person-plus-fill me-2"></i>Registrarse</h4>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 85vh;" data-aos="fade-up">
+    <div class="card p-4 shadow-lg bg-light w-100" style="max-width: 750px;">
+        <div class="row g-0 align-items-center">
+            
+            <!-- Columna izquierda: Formulario -->
+            <div class="col-md-7 p-3">
+                <h4 class="text-center mb-4"><i class="bi bi-person-plus-fill me-2"></i>Crear Cuenta</h4>
 
-        <form asp-action="Registro" method="post">
-            <div class="mb-3">
-                <label asp-for="Nombre" class="form-label">Nombre completo</label>
-                <input asp-for="Nombre" class="form-control" placeholder="Juan Pérez" />
-                <span asp-validation-for="Nombre" class="text-danger small"></span>
+                <form asp-action="Registro" method="post">
+                    <div class="mb-3">
+                        <label asp-for="Nombre" class="form-label">Nombre</label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Tu nombre completo" />
+                        <span asp-validation-for="Nombre" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Correo electrónico</label>
+                        <input asp-for="Email" class="form-control" placeholder="usuario@correo.com" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Contraseña" class="form-label">Contraseña</label>
+                        <input asp-for="Contraseña" type="password" class="form-control" placeholder="••••••••" />
+                        <span asp-validation-for="Contraseña" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ConfirmarContraseña" class="form-label">Confirmar Contraseña</label>
+                        <input asp-for="ConfirmarContraseña" type="password" class="form-control" placeholder="••••••••" />
+                        <span asp-validation-for="ConfirmarContraseña" class="text-danger small"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">
+                        <i class="bi bi-person-check-fill me-1"></i> Registrarse
+                    </button>
+                </form>
+
+                <div class="text-center mt-3">
+                    <a href="/Cuenta/Login">¿Ya tienes cuenta? Inicia sesión</a>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label">Correo electrónico</label>
-                <input asp-for="Email" class="form-control" placeholder="usuario@correo.com" />
-                <span asp-validation-for="Email" class="text-danger small"></span>
+            <!-- Columna derecha: Imagen -->
+            <div class="col-md-5 text-center">
+                <img src="~/images/log.png" alt="Logo La Perucha" class="img-fluid" style="max-height: 220px;">
             </div>
 
-            <div class="mb-3">
-                <label asp-for="Contraseña" class="form-label">Contraseña</label>
-                <input asp-for="Contraseña" type="password" class="form-control" placeholder="••••••••" />
-                <span asp-validation-for="Contraseña" class="text-danger small"></span>
-            </div>
-
-            <button type="submit" class="btn btn-success w-100">
-                <i class="bi bi-check2-circle me-1"></i> Registrarse
-            </button>
-        </form>
-
-        <div class="text-center mt-3">
-            <a href="/Cuenta/Login">¿Ya tienes cuenta? Inicia sesión</a>
         </div>
     </div>
 </div>

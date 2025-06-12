@@ -36,6 +36,126 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oaZTeam9y2ZNdttWy6dcsb8xO1wLhCXwoJk2Tj3C0B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 06:37:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner.11h3a5dbgn.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"11h3a5dbgn"},{"Name":"integrity","Value":"sha256-9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD\u002B310="},{"Name":"label","Value":"_content/HamburguesasTienda/images/baner.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"585182"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00229YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD\u002B310=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:31:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD\u002B310="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"585182"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00229YbknlHqHqtDOJfCZOMcgAM9xd0kYAjmQEp2gaD\u002B310=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:31:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner1.lungzull81.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner1.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lungzull81"},{"Name":"integrity","Value":"sha256-vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4="},{"Name":"label","Value":"_content/HamburguesasTienda/images/baner1.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2848334"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:33:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner1.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner1.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2848334"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vacfmFm0H3FoeIIRWrMAhChmJuDwho9sxViVNG2IDp4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:33:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner2.lmchod6ssf.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner2.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lmchod6ssf"},{"Name":"integrity","Value":"sha256-09kwwmVbxA6T\u002BQpKJSQj2ahsNywAidJXhSSayyolm20="},{"Name":"label","Value":"_content/HamburguesasTienda/images/baner2.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2617666"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u002209kwwmVbxA6T\u002BQpKJSQj2ahsNywAidJXhSSayyolm20=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:34:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/baner2.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner2.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-09kwwmVbxA6T\u002BQpKJSQj2ahsNywAidJXhSSayyolm20="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2617666"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u002209kwwmVbxA6T\u002BQpKJSQj2ahsNywAidJXhSSayyolm20=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 20:34:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham-5.f8y9tcvfrm.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham-5.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f8y9tcvfrm"},{"Name":"integrity","Value":"sha256-j7JZ2TD0G1p9PY9\u002BQddOad8epYMgz0b9RIIMKZHAfuY="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham-5.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"300126"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022j7JZ2TD0G1p9PY9\u002BQddOad8epYMgz0b9RIIMKZHAfuY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham-5.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham-5.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j7JZ2TD0G1p9PY9\u002BQddOad8epYMgz0b9RIIMKZHAfuY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"300126"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022j7JZ2TD0G1p9PY9\u002BQddOad8epYMgz0b9RIIMKZHAfuY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_1.vxucymgckj.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_1.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vxucymgckj"},{"Name":"integrity","Value":"sha256-o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham_1.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"296528"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:28:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_1.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_1.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"296528"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022o6G2BvB5Y5MHSe5WCHDchp45jfmzjPeRZ5FxXQJJz5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:28:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_2.e46duhh5qx.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_2.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e46duhh5qx"},{"Name":"integrity","Value":"sha256-PnJ0LaPZqk8mof1EG\u002BvsvsIOEo3KSZQDRv1BbmKe/YQ="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham_2.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"319000"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022PnJ0LaPZqk8mof1EG\u002BvsvsIOEo3KSZQDRv1BbmKe/YQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_2.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_2.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PnJ0LaPZqk8mof1EG\u002BvsvsIOEo3KSZQDRv1BbmKe/YQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"319000"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022PnJ0LaPZqk8mof1EG\u002BvsvsIOEo3KSZQDRv1BbmKe/YQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_3.6x72cjonub.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6x72cjonub"},{"Name":"integrity","Value":"sha256-ZnO1RmrwScbRDYXfgtb00\u002BLMN6nysryjBxc/baVgp\u002Bw="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham_3.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"313214"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022ZnO1RmrwScbRDYXfgtb00\u002BLMN6nysryjBxc/baVgp\u002Bw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_3.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZnO1RmrwScbRDYXfgtb00\u002BLMN6nysryjBxc/baVgp\u002Bw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"313214"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022ZnO1RmrwScbRDYXfgtb00\u002BLMN6nysryjBxc/baVgp\u002Bw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_4.2ewxxhrbt0.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_4.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2ewxxhrbt0"},{"Name":"integrity","Value":"sha256-xshkalwoLLyiwvYj8\u002BM7lcjYO\u002BjLIIxNAjPClXIYI18="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham_4.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"321640"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022xshkalwoLLyiwvYj8\u002BM7lcjYO\u002BjLIIxNAjPClXIYI18=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_4.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_4.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xshkalwoLLyiwvYj8\u002BM7lcjYO\u002BjLIIxNAjPClXIYI18="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"321640"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022xshkalwoLLyiwvYj8\u002BM7lcjYO\u002BjLIIxNAjPClXIYI18=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_6.m40sbpj0df.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_6.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m40sbpj0df"},{"Name":"integrity","Value":"sha256-pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ="},{"Name":"label","Value":"_content/HamburguesasTienda/images/ham_6.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"307366"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/ham_6.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ham_6.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"307366"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022pg4/jUgEoeNibs4zqvDn/CFH1s3fvCkoqRGVla27KcQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 18:29:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/log.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\log.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"497904"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 08:26:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/images/log.yav2xspzxd.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\log.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yav2xspzxd"},{"Name":"integrity","Value":"sha256-BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA="},{"Name":"label","Value":"_content/HamburguesasTienda/images/log.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"497904"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022BvQFmonLfKTZMewpVCkh49tx2MX99WRFqePwofoyCqA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Jun 2025 08:26:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HamburguesasTienda/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
