@@ -22,7 +22,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+
 app.UseStaticFiles(); // CSS, JS, imágenes
 app.UseRouting();
 app.UseSession();
