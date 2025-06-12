@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using HamburguesasTienda.Models;
+using Microsoft.Extensions.Logging;
 
 namespace HamburguesasTienda.Controllers
 {
@@ -8,13 +9,14 @@ namespace HamburguesasTienda.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        // Inyección de dependencia del logger
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
         // Página de inicio
-        public IActionResult Index()
+        public IActionResult Inicio()
         {
             _logger.LogInformation("Se accedió a la página de inicio.");
             return View();
@@ -34,19 +36,22 @@ namespace HamburguesasTienda.Controllers
             return View();
         }
 
-        // Página de privacidad
+        // Página de política de privacidad
         public IActionResult Privacy()
         {
             _logger.LogInformation("Se accedió a la política de privacidad.");
             return View();
         }
 
-        // Página de error
+        // Vista de errores
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             _logger.LogError("Se generó un error en la aplicación.");
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel
+            {
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            });
         }
     }
 }

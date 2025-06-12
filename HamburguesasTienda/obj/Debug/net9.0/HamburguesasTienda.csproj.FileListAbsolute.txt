@@ -1,9 +1,12 @@
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.exe
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.dll
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\appsettings.json
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.runtime.json
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.staticwebassets.endpoints.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.exe
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.deps.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.runtimeconfig.json
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.dll
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.pdb
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.AssemblyInfoInputs.cache
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.AssemblyInfo.cs
@@ -91,8 +94,5 @@ C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.dll
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\refint\HamburguesasTienda.dll
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.pdb
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.deps.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.runtimeconfig.json
-C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net9.0\HamburguesasTienda.pdb
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\HamburguesasTienda.genruntimeconfig.cache
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\obj\Debug\net9.0\ref\HamburguesasTienda.dll

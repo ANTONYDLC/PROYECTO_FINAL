@@ -1,4 +1,5 @@
-@model HamburguesasTienda.Models.Usuario
+@model HamburguesasTienda.Models.RegistroViewModel
+
 @{
     ViewData["Title"] = "Registro de Usuario";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -22,9 +23,9 @@
             </div>
 
             <div class="mb-3">
-                <label asp-for="Password" class="form-label">Contraseña</label>
-                <input asp-for="Password" type="password" class="form-control" placeholder="••••••••" />
-                <span asp-validation-for="Password" class="text-danger small"></span>
+                <label asp-for="Contraseña" class="form-label">Contraseña</label>
+                <input asp-for="Contraseña" type="password" class="form-control" placeholder="••••••••" />
+                <span asp-validation-for="Contraseña" class="text-danger small"></span>
             </div>
 
             <button type="submit" class="btn btn-success w-100">
