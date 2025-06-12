@@ -1,7 +1,10 @@
 # Imagen base para la aplicación ya compilada
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 8080
+
+# 👉 Esto permite que la app escuche en el puerto correcto
+ENV ASPNETCORE_URLS=http://+:8080
 
 # Imagen para compilar y publicar el proyecto
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
