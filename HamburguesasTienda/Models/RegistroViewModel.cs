@@ -3,20 +3,11 @@ using System.ComponentModel.DataAnnotations;
 namespace HamburguesasTienda.Models
 {
     public class RegistroViewModel
-    {
-        [Required]
-        public string Nombre { get; set; }
+{
+    public required string Nombre { get; set; }
+    public required string Email { get; set; }
+    public required string Contraseña { get; set; }
+    public required string ConfirmarContraseña { get; set; }
+}
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
-
-        [Required]
-        [DataType(DataType.Password)]
-        public string Contraseña { get; set; }
-
-        [Compare("Contraseña", ErrorMessage = "Las contraseñas no coinciden.")]
-        [DataType(DataType.Password)]
-        public string ConfirmarContraseña { get; set; }
-    }
 }

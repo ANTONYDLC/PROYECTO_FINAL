@@ -25,7 +25,7 @@ namespace HamburguesasTienda.Controllers
                     Nombre = model.Nombre,
                     Email = model.Email,
                     Contraseña = model.Contraseña,
-                    EsAdmin = false
+                    Rol = "Cliente"
                 });
 
                 return RedirectToAction("Login");

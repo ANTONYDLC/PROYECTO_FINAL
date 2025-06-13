@@ -1,61 +1,20 @@
-@model List<HamburguesasTienda.Models.Usuario>
+<!-- Panel.cshtml -->
 @{
     ViewData["Title"] = "Panel de Administración";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-5" data-aos="fade-up">
-    <h2 class="text-center mb-4"><i class="bi bi-speedometer2 me-2"></i>Panel de Administración</h2>
-    <p class="text-center text-muted mb-4">Aquí puedes ver, editar o eliminar cuentas de usuario y administrador.</p>
+<h1>Panel de Administración</h1>
 
-    <div class="table-responsive" data-aos="zoom-in">
-        <table class="table table-striped table-hover shadow-sm rounded bg-white">
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Rol</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @for (int i = 0; i < Model.Count; i++)
-                {
-                    var user = Model[i];
-                    <tr>
-                        <td>@(i + 1)</td>
-                        <td>@user.Nombre</td>
-                        <td>@user.Email</td>
-                        <td>
-                            @if (user.EsAdmin)
-                            {
-                                <span class="badge bg-danger">Administrador</span>
-                            }
-                            else
-                            {
-                                <span class="badge bg-primary">Usuario</span>
-                            }
-                        </td>
-                        <td>
-                            <a asp-controller="Admin" asp-action="Editar" asp-route-email="@user.Email" class="btn btn-sm btn-warning me-1">
-                                <i class="bi bi-pencil-square"></i> Editar
-                            </a>
-                            <form asp-controller="Admin" asp-action="Eliminar" method="post" class="d-inline">
-                                <input type="hidden" name="email" value="@user.Email" />
-                                <button class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro?');">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+<div class="list-group mt-4">
+    <a class="list-group-item list-group-item-action" href="/Admin/Productos">🛒 Gestionar Productos</a>
+    <a class="list-group-item list-group-item-action" href="/Admin/Usuarios">👤 Ver Usuarios</a>
+    <a class="list-group-item list-group-item-action" href="/Admin/CrearAnuncio">📢 Crear Anuncio</a>
+    <a class="list-group-item list-group-item-action" href="/Admin/Estadisticas">📊 Ver Estadísticas</a>
 </div>
 
-@section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init();</script>
+@* Si tenías esto, quítalo si no estás usando ningún modelo
+@for (int i = 0; i < Model.Count; i++)
+{
+    <p>@Model[i]</p>
 }
+*@

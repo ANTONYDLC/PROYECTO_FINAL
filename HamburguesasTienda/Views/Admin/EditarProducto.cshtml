@@ -1,0 +1,29 @@
+@model HamburguesasTienda.Models.Producto
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Agregar Producto" : "Editar Producto";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="@ViewData["Title"]">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Descripcion"></label>
+        <textarea asp-for="Descripcion" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Precio"></label>
+        <input asp-for="Precio" type="number" step="0.01" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Categoria"></label>
+        <input asp-for="Categoria" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ImagenUrl"></label>
+        <input asp-for="ImagenUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Guardar</button>
+</form>

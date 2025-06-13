@@ -1,65 +1,95 @@
 using HamburguesasTienda.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using HamburguesasTienda.Data;
 
-namespace HamburguesasTienda.Controllers
+public class AdminController : Controller
 {
-    public class AdminController : Controller
+    private readonly AppDbContext _context;
+
+    public AdminController(AppDbContext context)
     {
-        private static List<Usuario> usuarios => CuentaControllerReflection.GetUsuarios();
-
-        public IActionResult Panel()
-        {
-            if (!EsAdmin()) return RedirectToAction("Login", "Cuenta");
-            return View(usuarios);
-        }
-
-        public IActionResult Editar(string email)
-        {
-            var user = usuarios.FirstOrDefault(u => u.Email == email);
-            return View(user);
-        }
-
-        [HttpPost]
-        public IActionResult Editar(Usuario userEditado)
-        {
-            var user = usuarios.FirstOrDefault(u => u.Email == userEditado.Email);
-            if (user != null)
-            {
-                user.Nombre = userEditado.Nombre;
-                user.EsAdmin = userEditado.EsAdmin;
-            }
-            return RedirectToAction("Panel");
-        }
-
-        [HttpPost]
-        public IActionResult Eliminar(string email)
-        {
-            var user = usuarios.FirstOrDefault(u => u.Email == email);
-            if (user != null) usuarios.Remove(user);
-            return RedirectToAction("Panel");
-        }
-
-        private bool EsAdmin()
-        {
-            return HttpContext.Session.GetString("esAdmin") == "True";
-        }
+        _context = context;
     }
 
-    // Simulación de acceso estático a usuarios desde CuentaController
-    public static class CuentaControllerReflection
+    public async Task<IActionResult> Index()
     {
-        private static List<Usuario>? _usuariosField;
+        var anuncios = await _context.Anuncios.OrderByDescending(a => a.FechaCreacion).ToListAsync();
+        return View(anuncios);
+    }
 
-        public static List<Usuario> GetUsuarios()
+    public async Task<IActionResult> Productos()
+    {
+        var productos = await _context.Productos.ToListAsync();
+        return View(productos);
+    }
+
+    public async Task<IActionResult> EditarProducto(int? id)
+    {
+        if (id == null)
         {
-            if (_usuariosField == null)
-            {
-                // Acceso al campo privado del otro controlador (hack simple para ejemplo sin DB)
-                var cuentaControllerType = typeof(CuentaController);
-                var field = cuentaControllerType.GetField("usuarios", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
-                _usuariosField = field?.GetValue(null) as List<Usuario> ?? new List<Usuario>();
-            }
-            return _usuariosField;
+            return NotFound();
         }
+
+        var producto = await _context.Productos.FindAsync(id);
+
+        if (producto == null)
+        {
+            return NotFound();
+        }
+
+        return View(producto);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> EditarProducto(Producto producto)
+    {
+        if (!ModelState.IsValid) return View(producto);
+
+        if (producto.Id == 0)
+            _context.Add(producto);
+        else
+            _context.Update(producto);
+
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Productos");
+    }
+
+    public async Task<IActionResult> Usuarios()
+    {
+        var usuarios = await _context.Usuarios.ToListAsync();
+        return View(usuarios);
+    }
+
+    public IActionResult CrearAnuncio() => View();
+
+    [HttpPost]
+    public async Task<IActionResult> CrearAnuncio(Anuncio anuncio)
+    {
+        if (!ModelState.IsValid) return View(anuncio);
+        _context.Anuncios.Add(anuncio);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Estadisticas()
+    {
+        var totalUsuarios = _context.Usuarios.Count();
+        var totalProductos = _context.Productos.Count();
+        var productoMasVendido = _context.Productos
+            .OrderByDescending(p => p.Ventas)
+            .FirstOrDefault();
+
+        ViewBag.TotalUsuarios = totalUsuarios;
+        ViewBag.TotalProductos = totalProductos;
+        ViewBag.ProductoTop = productoMasVendido?.Nombre;
+
+        return View();
+    }
+
+    // ✅ NUEVA ACCIÓN PARA /Admin/Panel
+    public IActionResult Panel()
+    {
+        return View();
     }
 }
