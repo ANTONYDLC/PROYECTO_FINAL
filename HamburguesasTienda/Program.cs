@@ -4,6 +4,9 @@ using HamburguesasTienda.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 
+using HamburguesasTienda.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuración de la conexión a PostgreSQL
@@ -11,6 +14,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<FakeStoreService>();
+
+
 builder.Services.AddSession();
 
 // ✅ Configurar políticas de cookies para compatibilidad con autenticación externa
