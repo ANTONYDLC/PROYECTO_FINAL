@@ -1,15 +1,30 @@
 using HamburguesasTienda.Models;
 using Microsoft.EntityFrameworkCore;
 using HamburguesasTienda.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Configuración de la conexión a PostgreSQL (lee desde appsettings.json)
+// ✅ Configuración de la conexión a PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
+
+// ✅ Agregar autenticación con Google
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+.AddCookie()
+.AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+});
 
 var app = builder.Build();
 
@@ -20,9 +35,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseStaticFiles(); // CSS, JS, imágenes
+app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
+
+// 🔐 Activar autenticación y autorización
+app.UseAuthentication();
 app.UseAuthorization();
 
 // ✅ Ejecutar Seeder del admin
@@ -30,14 +48,13 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-    // Verificar si ya hay un admin, y si no, crearlo
     if (!context.Usuarios.Any(u => u.Rol == "Admin"))
     {
         var admin = new Usuario
         {
             Nombre = "Administrador",
             Email = "admin@tienda.com",
-            Contraseña = "admin123", // En desarrollo, sin encriptar
+            Contraseña = "admin123",
             Rol = "Admin"
         };
 

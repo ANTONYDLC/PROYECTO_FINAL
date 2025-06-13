@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Xo+4/UqT5gk=",
+  "dgSpecHash": "TYDU62FGYHg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antho\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Antho\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\8.0.2\\microsoft.aspnetcore.authentication.facebook.8.0.2.nupkg.sha512",
+    "C:\\Users\\Antho\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\8.0.4\\microsoft.aspnetcore.authentication.google.8.0.4.nupkg.sha512",
     "C:\\Users\\Antho\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Antho\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\Antho\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",

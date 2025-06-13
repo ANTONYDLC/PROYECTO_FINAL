@@ -136,3 +136,5 @@ C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\Antho\OneDrive\Desktop\PROYECTO_FINAL\HamburguesasTienda\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
