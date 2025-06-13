@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj": {}
+    "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\HamburguesasTienda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj": {
+    "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\HamburguesasTienda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj",
+        "projectUniqueName": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\HamburguesasTienda.csproj",
         "projectName": "HamburguesasTienda",
-        "projectPath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj",
+        "projectPath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\HamburguesasTienda.csproj",
         "packagesPath": "C:\\Users\\Antho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\obj\\",
+        "outputPath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Antho\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TYDU62FGYHg=",
+  "dgSpecHash": "U6m0ZUMa/Ys=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL\\HamburguesasTienda\\HamburguesasTienda.csproj",
+  "projectFilePath": "C:\\Users\\Antho\\OneDrive\\Desktop\\PROYECTO_FINAL-1\\HamburguesasTienda\\HamburguesasTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antho\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Antho\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\8.0.2\\microsoft.aspnetcore.authentication.facebook.8.0.2.nupkg.sha512",

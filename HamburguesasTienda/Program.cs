@@ -13,6 +13,20 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 
+// ✅ Configurar políticas de cookies para compatibilidad con autenticación externa
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => false;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
+
+// ✅ Configurar cookies de autenticación
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+});
+
 // ✅ Agregar autenticación con Google
 builder.Services.AddAuthentication(options =>
 {
@@ -35,11 +49,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseHttpsRedirection(); // Asegura HTTPS
 app.UseStaticFiles();
-app.UseRouting();
-app.UseSession();
 
-// 🔐 Activar autenticación y autorización
+app.UseRouting();
+app.UseCookiePolicy(); // 👈 Importante para autenticación externa
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
