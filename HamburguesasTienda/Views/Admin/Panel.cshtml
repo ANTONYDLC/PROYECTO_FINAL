@@ -1,20 +1,62 @@
-<!-- Panel.cshtml -->
+
 @{
     ViewData["Title"] = "Panel de Administración";
+    var anuncios = ViewBag.UltimosAnuncios as List<HamburguesasTienda.Models.Anuncio>;
 }
 
-<h1>Panel de Administración</h1>
 
-<div class="list-group mt-4">
-    <a class="list-group-item list-group-item-action" href="/Admin/Productos">🛒 Gestionar Productos</a>
-    <a class="list-group-item list-group-item-action" href="/Admin/Usuarios">👤 Ver Usuarios</a>
-    <a class="list-group-item list-group-item-action" href="/Admin/CrearAnuncio">📢 Crear Anuncio</a>
-    <a class="list-group-item list-group-item-action" href="/Admin/Estadisticas">📊 Ver Estadísticas</a>
+<div class="container mt-4">
+    <h2>Panel de Administración</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card bg-success text-white mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Usuarios registrados</h5>
+                    <p class="card-text fs-4">@ViewBag.TotalUsuarios</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info text-white mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Productos disponibles</h5>
+                    <p class="card-text fs-4">@ViewBag.TotalProductos</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-warning text-dark mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Producto más vendido</h5>
+                    <p class="card-text fs-5">@ViewBag.ProductoTop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4>📢 Últimos anuncios</h4>
+    @if (anuncios != null && anuncios.Any())
+    {
+        <ul class="list-group">
+            @foreach (var anuncio in anuncios)
+            {
+                <li class="list-group-item">
+                    <strong>@anuncio.Titulo:</strong> @anuncio.Mensaje
+                    <span class="text-muted float-end">@anuncio.FechaCreacion.ToString("dd/MM/yyyy")</span>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No hay anuncios recientes.</p>
+    }
+
+    <div class="mt-4">
+        <a href="/Admin/Productos" class="btn btn-primary">🛍 Gestionar Productos</a>
+        <a href="/Admin/Usuarios" class="btn btn-secondary">👤 Ver Usuarios</a>
+        <a href="/Admin/CrearAnuncio" class="btn btn-success">📣 Crear Anuncio</a>
+        <a href="/Admin/Estadisticas" class="btn btn-info">📊 Ver Estadísticas</a>
+    </div>
 </div>
-
-@* Si tenías esto, quítalo si no estás usando ningún modelo
-@for (int i = 0; i < Model.Count; i++)
-{
-    <p>@Model[i]</p>
-}
-*@

@@ -6,5 +6,7 @@ namespace HamburguesasTienda.Models
         public int TotalProductos { get; set; }
         public int TotalUsuarios { get; set; }
         public decimal TotalVentas { get; set; }
+
+        public Producto? ProductoTop { get; set; } 
     }
 }

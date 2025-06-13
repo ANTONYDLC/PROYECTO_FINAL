@@ -73,23 +73,45 @@ public class AdminController : Controller
     }
 
     public IActionResult Estadisticas()
+{
+    var totalUsuarios = _context.Usuarios.Count();
+    var totalProductos = _context.Productos.Count();
+    var totalVentas = _context.Productos.Sum(p => p.Ventas);
+
+    var productoTop = _context.Productos
+        .OrderByDescending(p => p.Ventas)
+        .FirstOrDefault();
+
+    var model = new EstadisticasViewModel
     {
-        var totalUsuarios = _context.Usuarios.Count();
-        var totalProductos = _context.Productos.Count();
-        var productoMasVendido = _context.Productos
+        TotalUsuarios = totalUsuarios,
+        TotalProductos = totalProductos,
+        TotalVentas = totalVentas,
+        ProductoTop = productoTop
+    };
+
+    return View(model);
+}
+
+
+    // ✅ NUEVA ACCIÓN PARA /Admin/Panel
+    public async Task<IActionResult> Panel()
+    {
+        var totalUsuarios = await _context.Usuarios.CountAsync();
+        var totalProductos = await _context.Productos.CountAsync();
+        var productoTop = await _context.Productos
             .OrderByDescending(p => p.Ventas)
-            .FirstOrDefault();
+            .FirstOrDefaultAsync();
+        var ultimosAnuncios = await _context.Anuncios
+            .OrderByDescending(a => a.FechaCreacion)
+            .Take(5)
+            .ToListAsync();
 
         ViewBag.TotalUsuarios = totalUsuarios;
         ViewBag.TotalProductos = totalProductos;
-        ViewBag.ProductoTop = productoMasVendido?.Nombre;
+        ViewBag.ProductoTop = productoTop?.Nombre ?? "Sin ventas";
+        ViewBag.UltimosAnuncios = ultimosAnuncios;
 
-        return View();
-    }
-
-    // ✅ NUEVA ACCIÓN PARA /Admin/Panel
-    public IActionResult Panel()
-    {
         return View();
     }
 }

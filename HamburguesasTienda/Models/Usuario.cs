@@ -5,16 +5,18 @@ namespace HamburguesasTienda.Models
     public class Usuario
     {
         public int Id { get; set; }
-        public required string Nombre { get; set; }
-        public required string Email { get; set; }  // ← ESTA DEBE EXISTIR
-        public required string Contraseña { get; set; }
+
         [Required]
-        public required string Rol { get; set; } // "admin" o "usuario"
+        public string Nombre { get; set; }
 
-        // Propiedad calculada que puedes usar en toda la app
-        public bool EsAdmin => Rol?.ToLower() == "admin"; 
+        [Required, EmailAddress]
+        public string Email { get; set; }
 
-        // Propiedad calculada que puedes usar en toda la app
+        [Required]
+        public string Contraseña { get; set; }
 
+        public string Rol { get; set; } = "Cliente";
+
+        public bool EsAdmin => Rol == "Admin";
     }
 }

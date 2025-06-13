@@ -10,9 +10,19 @@
             
             <!-- Columna izquierda: Formulario -->
             <div class="col-md-7 p-3">
-                <h4 class="text-center mb-4"><i class="bi bi-person-circle me-2"></i>Iniciar Sesión</h4>
+                <h4 class="text-center mb-4">
+                    <i class="bi bi-person-circle me-2"></i>Iniciar Sesión
+                </h4>
 
-                <form asp-action="Login" method="post">
+                <!-- Mensaje de error -->
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger text-center py-2">
+                        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    </div>
+                }
+
+                <form asp-action="Login" method="post" novalidate>
                     <div class="mb-3">
                         <label asp-for="Email" class="form-label">Correo electrónico</label>
                         <input asp-for="Email" class="form-control" placeholder="usuario@correo.com" />
@@ -42,4 +52,4 @@
 
         </div>
     </div>
-</div>
+</div>  
