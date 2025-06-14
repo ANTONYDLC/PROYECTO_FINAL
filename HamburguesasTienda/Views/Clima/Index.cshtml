@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Clima";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Consulta del clima</h2>
+
+    <form method="get" asp-controller="Home" asp-action="Clima">
+        <div class="input-group mb-3">
+            <input type="text" name="ciudad" class="form-control" placeholder="Escribe una ciudad" required />
+            <button class="btn btn-primary" type="submit">Consultar</button>
+        </div>
+    </form>
+
+    @if (ViewBag.Clima != null)
+    {
+        <div class="alert alert-info">
+            <strong>Clima en @ViewBag.Ciudad:</strong> @ViewBag.Clima
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+</div>

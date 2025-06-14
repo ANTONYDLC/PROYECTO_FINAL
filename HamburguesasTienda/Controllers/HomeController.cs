@@ -8,17 +8,45 @@ namespace HamburguesasTienda.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly OpenWeatherService _climaService;
 
-        // Inyección de dependencia del logger
-        public HomeController(ILogger<HomeController> logger)
+        // Inyección de logger y servicio del clima
+        public HomeController(ILogger<HomeController> logger, OpenWeatherService climaService)
         {
             _logger = logger;
+            _climaService = climaService;
         }
 
         // Página de inicio
-        public IActionResult Inicio()
+        public async Task<IActionResult> Inicio()
         {
             _logger.LogInformation("Se accedió a la página de inicio.");
+
+            var clima = await _climaService.ObtenerClimaAsync("Lima"); // Por defecto Lima
+            ViewBag.Clima = clima;
+
+            return View();
+        }
+
+        // ✅ Nueva acción para consultar clima por ciudad
+        [HttpGet]
+        public async Task<IActionResult> Clima(string ciudad)
+        {
+            if (!string.IsNullOrEmpty(ciudad))
+            {
+                try
+                {
+                    var clima = await _climaService.ObtenerClimaAsync(ciudad);
+                    ViewBag.Clima = clima;
+                    ViewBag.Ciudad = ciudad;
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error al obtener clima.");
+                    ViewBag.Error = "No se pudo obtener el clima.";
+                }
+            }
+
             return View();
         }
 

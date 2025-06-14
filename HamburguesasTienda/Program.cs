@@ -15,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<FakeStoreService>();
+builder.Services.AddHttpClient<OpenWeatherService>();
+
 
 
 builder.Services.AddSession();

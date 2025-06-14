@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Antho/OneDrive/Desktop/PROYECTO_FINAL-1/HamburguesasTienda/Views/Clima/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Antho/OneDrive/Desktop/PROYECTO_FINAL-1/HamburguesasTienda/Views/Cuenta/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Antho/OneDrive/Desktop/PROYECTO_FINAL-1/HamburguesasTienda/Views/Home/Acerca.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2VyY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antho/OneDrive/Desktop/PROYECTO_FINAL-1/HamburguesasTienda/Views/Home/Clima.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGltYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Antho/OneDrive/Desktop/PROYECTO_FINAL-1/HamburguesasTienda/Views/Home/Contacto.cshtml]
