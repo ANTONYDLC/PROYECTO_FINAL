@@ -38,7 +38,17 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
 </div>
-
+ 
+<!-- Frase motivacional del día -->
+@if (ViewBag.Frase != null)
+{
+    <div class="container my-4" data-aos="fade-up">
+        <div class="alert alert-success shadow-lg text-center fs-5 fw-semibold rounded-4 p-4">
+            <i class="bi bi-chat-quote-fill me-2"></i>
+            <em>@ViewBag.Frase</em>
+        </div>
+    </div>
+}
 <!-- Tarjetas destacadas -->
 <h2 class="text-center mb-4" data-aos="fade-right">Nuestras favoritas</h2>
 

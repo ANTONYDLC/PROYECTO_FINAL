@@ -1,0 +1,135 @@
+@{
+    ViewData["Title"] = "Delivery";
+}
+
+<h2 class="text-center my-4">🚚 Seguimiento en Tiempo Real</h2>
+
+<div class="container">
+    <div class="row">
+        <!-- Mapa -->
+        <div class="col-md-8">
+            <div id="map" style="height: 500px; border-radius: 12px;"></div>
+        </div>
+
+        <!-- Info y formulario -->
+        <div class="col-md-4">
+            <div class="card shadow p-3 mb-3">
+                <h5 class="card-title">📦 Información del Pedido</h5>
+                <p><strong>Pedido:</strong> Combo Clásico Doble</p>
+                <p><strong>Repartidor:</strong> José Luis</p>
+                <p><strong>Estado:</strong> En ruta</p>
+                <p><strong>Tiempo estimado:</strong> <span id="tiempo-estimado">Cargando...</span></p>
+            </div>
+
+            <div class="card shadow p-3">
+                <h5 class="card-title">📍 Tu dirección</h5>
+                <input type="text" id="direccionInput" class="form-control mb-2" placeholder="Ej: Av. Perú 456, Lima" />
+                <button class="btn btn-primary w-100" onclick="geocodeDireccion()">Calcular ruta</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Leaflet CSS y JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <!-- Nominatim Geocoding API (gratuita) -->
+    <script>
+        var localLat = -12.0464;
+        var localLng = -77.0428;
+
+        var map = L.map('map').setView([localLat, localLng], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var localMarker = L.marker([localLat, localLng]).addTo(map)
+            .bindPopup("📍 HamburguesasTienda - Local Central").openPopup();
+
+        var repartidorMarker = L.marker([localLat, localLng], {
+            icon: L.icon({
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/2961/2961948.png',
+                iconSize: [40, 40],
+                iconAnchor: [20, 40]
+            })
+        }).addTo(map).bindPopup("🛵 Repartidor");
+
+        // Simular movimiento del repartidor hacia la dirección del cliente
+        let destino = null;
+        let rutaLine = null;
+
+        function geocodeDireccion() {
+            const direccion = document.getElementById("direccionInput").value;
+            if (!direccion) {
+                alert("Por favor ingresa tu dirección.");
+                return;
+            }
+
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(direccion)}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        alert("No se encontró la dirección.");
+                        return;
+                    }
+
+                    const lat = parseFloat(data[0].lat);
+                    const lon = parseFloat(data[0].lon);
+                    destino = [lat, lon];
+
+                    // Marcar la dirección del usuario
+                    L.marker(destino, {
+                        icon: L.icon({
+                            iconUrl: 'https://cdn-icons-png.flaticon.com/512/854/854878.png',
+                            iconSize: [32, 32],
+                            iconAnchor: [16, 32]
+                        })
+                    }).addTo(map).bindPopup("📦 Tu casa").openPopup();
+
+                    // Dibujar línea de ruta
+                    if (rutaLine) map.removeLayer(rutaLine);
+                    rutaLine = L.polyline([repartidorMarker.getLatLng(), destino], { color: 'blue' }).addTo(map);
+                    map.fitBounds(rutaLine.getBounds());
+
+                    // Estimar tiempo (1 min por km aprox)
+                    const distancia = map.distance(repartidorMarker.getLatLng(), destino) / 1000; // km
+                    const tiempoEstimado = Math.ceil(distancia); // minutos
+                    document.getElementById("tiempo-estimado").innerText = tiempoEstimado + " min";
+
+                    simularMovimiento();
+                });
+        }
+
+        function simularMovimiento() {
+            if (!destino) return;
+
+            let current = repartidorMarker.getLatLng();
+            let steps = 30;
+            let deltaLat = (destino[0] - current.lat) / steps;
+            let deltaLng = (destino[1] - current.lng) / steps;
+
+            let i = 0;
+            const interval = setInterval(() => {
+                if (i >= steps) {
+                    clearInterval(interval);
+                    repartidorMarker.bindPopup("🛵 Entregado ✅").openPopup();
+                    return;
+                }
+
+                current = {
+                    lat: current.lat + deltaLat,
+                    lng: current.lng + deltaLng
+                };
+                repartidorMarker.setLatLng(current);
+
+                if (rutaLine) {
+                    rutaLine.setLatLngs([current, destino]);
+                }
+
+                i++;
+            }, 500); // cada 0.5s mueve
+        }
+    </script>
+}

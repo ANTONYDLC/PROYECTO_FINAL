@@ -2,6 +2,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using HamburguesasTienda.Models;
 using Microsoft.Extensions.Logging;
+using HamburguesasTienda.Services;
+using System.Text.Json;
+
 
 namespace HamburguesasTienda.Controllers
 {
@@ -9,12 +12,16 @@ namespace HamburguesasTienda.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly OpenWeatherService _climaService;
-
-        // Inyección de logger y servicio del clima
-        public HomeController(ILogger<HomeController> logger, OpenWeatherService climaService)
+        
+        // Inyección de logger y servicios
+        public HomeController(
+            ILogger<HomeController> logger,
+            OpenWeatherService climaService
+        )
         {
             _logger = logger;
             _climaService = climaService;
+            
         }
 
         // Página de inicio
@@ -22,31 +29,23 @@ namespace HamburguesasTienda.Controllers
         {
             _logger.LogInformation("Se accedió a la página de inicio.");
 
-            var clima = await _climaService.ObtenerClimaAsync("Lima"); // Por defecto Lima
+            var clima = await _climaService.ObtenerClimaAsync("Lima");
             ViewBag.Clima = clima;
-
-            return View();
-        }
-
-        // ✅ Nueva acción para consultar clima por ciudad
-        [HttpGet]
-        public async Task<IActionResult> Clima(string ciudad)
-        {
-            if (!string.IsNullOrEmpty(ciudad))
+             // Obtener frase motivacional
+            using (var httpClient = new HttpClient())
             {
                 try
                 {
-                    var clima = await _climaService.ObtenerClimaAsync(ciudad);
-                    ViewBag.Clima = clima;
-                    ViewBag.Ciudad = ciudad;
+                    var respuesta = await httpClient.GetStringAsync("https://zenquotes.io/api/random");
+                    var datos = JsonSerializer.Deserialize<List<FraseModel>>(respuesta);
+                    ViewBag.Frase = datos?[0]?.q + " — " + datos?[0]?.a;
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "Error al obtener clima.");
-                    ViewBag.Error = "No se pudo obtener el clima.";
+                    _logger.LogWarning("No se pudo obtener la frase motivacional: " + ex.Message);
+                    ViewBag.Frase = null;
                 }
             }
-
             return View();
         }
 
@@ -68,6 +67,13 @@ namespace HamburguesasTienda.Controllers
         public IActionResult Privacy()
         {
             _logger.LogInformation("Se accedió a la política de privacidad.");
+            return View();
+        }
+
+        // Página de Delivery
+        public IActionResult Delivery()
+        {
+            
             return View();
         }
 
